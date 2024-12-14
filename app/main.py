@@ -19,6 +19,10 @@ import httpx
 # Initialize FastAPI app
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+    
 # Define data models
 class QueryRequest(BaseModel):
     query: str
