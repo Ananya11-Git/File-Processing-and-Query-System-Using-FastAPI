@@ -1,4 +1,5 @@
 #file upload
+import tempfile
 from fastapi import FastAPI, File, UploadFile
 import os
 #pdf parsing
@@ -32,7 +33,7 @@ class QueryResponse(BaseModel):
     response: Union[Dict[str, Union[str, Dict[str, str]]], str]
 
 # OpenAI API Key (replace with your actual key)
-openai.api_key = ""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
+openai.api_key = "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
 
 # Helper functions
 def extract_text_from_pdf(file_path: str) -> str:
