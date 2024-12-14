@@ -9,3 +9,4 @@ httpx
 pillow
 pytest
 pytest-asyncio
+pyngrok
