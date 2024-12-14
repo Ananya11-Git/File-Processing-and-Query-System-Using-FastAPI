@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+PyPDF2
+pdfplumber
+pytesseract
+openai
+python-multipart
+httpx
+pillow
+pytest
+pytest-asyncio
