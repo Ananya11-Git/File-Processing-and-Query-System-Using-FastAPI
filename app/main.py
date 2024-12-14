@@ -1,4 +1,20 @@
-from fastapi import FastAPI
+#file upload
+from fastapi import FastAPI, File, UploadFile
+import os
+#pdf parsing
+import PyPDF2
+import pdfplumber
+#ocr
+import pytesseract
+from PIL import Image
+#openai llm
+import openai
+#json modelling
+from pydantic import BaseModel
+from typing import Dict, List, Union
+#testing
+import pytest
+import httpx
 
 # Initialize FastAPI app
 app = FastAPI()
