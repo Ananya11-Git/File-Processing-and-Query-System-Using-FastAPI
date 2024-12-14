@@ -103,6 +103,9 @@ async def process_query(request: QueryRequest):
         "query": request.query,
         "response": response_text
     }
-
+    
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 # Add instructions for running the API in the README.md
 # Additional endpoints can be added here if needed for visualization or other features.
